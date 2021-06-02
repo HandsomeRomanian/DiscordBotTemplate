@@ -9,8 +9,8 @@ const auth = require("./auth.json");
 var config = require("./config.json");
 var msgModule = require("./modules/chatFilter");
 var utilModule = require("./modules/utils");
-var adminModule = require("./modules/admin")
-var musicController = require("./modules/music")
+var adminModule = require("./modules/admin");
+var musicController = require("./modules/music");
 
 const client = new Discord.Client();
 
