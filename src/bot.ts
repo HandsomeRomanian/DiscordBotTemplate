@@ -24,9 +24,7 @@ export class Bot {
     public listen(): Promise<string> {
         this._client.on('message', (message: Message) => {
             if (!message.author.bot) {
-                this.configManager.config.autoreacts.find(x => x.channelId == message.channel.id)?.icons?.forEach(x => {
-                    message.react(x);
-                })
+                message.channel.send(`What's up ${message.author.username}!`)
             }
         });
         return this._client.login(this.token);

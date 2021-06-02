@@ -1,11 +1,11 @@
 import { Client, Message } from "discord.js";
-import { AddReaction, Command } from "../commands";
+import { Command } from "../commands";
 import { ConfigManager } from "./config-manager";
 import { container } from "tsyringe";
 
 export class CommandManager {
 
-    private readonly commands: Command[] = [new AddReaction()]
+    private readonly commands: Command[] = []
 
     constructor(client: Client) {
         const configManager = container.resolve(ConfigManager);

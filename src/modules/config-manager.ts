@@ -1,4 +1,4 @@
-import { AutoReact } from '../models/autoreact';
+
 import { readFile, writeFile } from 'fs';
 import { singleton } from "tsyringe";
 @singleton()
@@ -32,5 +32,4 @@ export class ConfigManager {
 
 class Config {
     prefix: string = '!';
-    autoreacts: AutoReact[] = [];
 }
